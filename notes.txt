@@ -1,0 +1,17 @@
+Ideas:
+  Side-by-side code examples.
+  Voting
+
+Code qualities:
+  Readability
+  Performance
+  Efficiency
+  Maintainability
+  Error-proneness
+  Conciseness
+
+Comparisons:
+  C strings vs std::string
+
+Functionality:
+  string split
