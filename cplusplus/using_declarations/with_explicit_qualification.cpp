@@ -1,3 +1,5 @@
+// In this version we explicitly qualify all names.
+
 #include <iostream>
 #include <string>
 #include <vector>

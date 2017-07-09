@@ -1,3 +1,6 @@
+// In this example, we use using declarations.  This minimizes the
+// amount of qualification in the main code.
+
 #include <iostream>
 #include <string>
 #include <vector>
