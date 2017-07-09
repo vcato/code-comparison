@@ -1,0 +1,5 @@
+*.o
+*.d
+baseline
+return_by_reference
+return_by_value
