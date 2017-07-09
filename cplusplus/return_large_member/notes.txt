@@ -1,0 +1,3 @@
+minimum user time over three runs:
+  return by reference: 0m1.864s
+  return by value:     0m1.908s
