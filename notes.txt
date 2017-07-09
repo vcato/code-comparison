@@ -1,17 +1,27 @@
-Ideas:
-  Side-by-side code examples.
-  Voting
+* Ideas
+  * Side-by-side code examples.
+  * Voting
 
-Code qualities:
-  Readability
-  Performance
-  Efficiency
-  Maintainability
-  Error-proneness
-  Conciseness
+* Guidelines
+  * Avoid contrived examples
+    * Use examples that are locally good.  It shouldn't be easy to make
+      the code better while keeping the same approach.
+    * Code should only differ in one fundamental way to make it easier
+      to compare.
+    * Code should be compilable.
+      * Not sure how practical this will be.
 
-Comparisons:
-  C strings vs std::string
+* Code qualities
+  * Readability
+  * Performance
+  * Efficiency
+  * Maintainability
+  * Error-proneness
+  * Conciseness
 
-Functionality:
-  string split
+* Comparisons
+  * C strings vs std::string
+  * Functional vs object-oriented
+
+* Functionality
+  * string split
