@@ -1,0 +1,8 @@
+Ideas from Lee:
+
+1. functions/methods that: return by reference, return by copy, return with move : for non member objects
+2. getline vs cin 
+3. constructor rule of 5  example 
+4. overloaded functions vs template functions for same number of function parameters
+5. using iterator++ vs for(auto x: list)
+6. class/method vs struct/free functions
