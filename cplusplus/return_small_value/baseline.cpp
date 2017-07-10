@@ -4,20 +4,13 @@
 #include "arbitrary_number.hpp"
 
 
-static int empty_sum()
+int main()
 {
-    int sum = 0;
+    set_arbitrary_number(1);
 
     for (int i=0; i!=n_runs; ++i) {
         do_nothing();
     }
 
-    return sum;
-}
-
-
-int main()
-{
-    set_arbitrary_number(1);
-    return empty_sum();
+    return 0;
 }
