@@ -1,0 +1,19 @@
+#!/bin/sh
+count=10
+
+repeat () {
+  echo "$@"
+
+  seq $count | while read run; do
+    echo -n "." >&2
+    echo "$run"
+    /usr/bin/time -p "$@" 2>&1
+  done
+}
+
+
+(
+  repeat ./baseline
+  repeat ./return_by_reference
+  repeat ./return_by_value
+) >results.txt

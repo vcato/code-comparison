@@ -3,13 +3,13 @@ EXECUTABLES=return_by_value return_by_reference baseline
 
 all: $(EXECUTABLES)
 
-return_by_value: return_by_value.o random_numbers.o
+return_by_value: return_by_value.o arbitrary_number.o
 	$(CXX) -o $@ $^
 
-return_by_reference: return_by_reference.o random_numbers.o
+return_by_reference: return_by_reference.o arbitrary_number.o
 	$(CXX) -o $@ $^
 
-baseline: baseline.o random_numbers.o
+baseline: baseline.o arbitrary_number.o
 	$(CXX) -o $@ $^
 
 clean:

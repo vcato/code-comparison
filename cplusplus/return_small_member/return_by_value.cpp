@@ -1,13 +1,13 @@
 // Create a sum of unknown int values that are returned by value.
 
-#include "random_numbers.hpp"
+#include "arbitrary_number.hpp"
 
 
-static int sum_of_numbers_by_value(int n)
+static int sum_of_numbers_by_value()
 {
     int sum = 0;
 
-    for (int i=0; i!=n; ++i) {
+    for (int i=0; i!=n_runs; ++i) {
         sum += arbitrary_number_by_value();
         do_nothing();
     }
@@ -18,7 +18,6 @@ static int sum_of_numbers_by_value(int n)
 
 int main()
 {
-    int n = 100000000;
-    create_random_number();
-    return sum_of_numbers_by_value(n);
+    set_arbitrary_number(1);
+    return sum_of_numbers_by_value();
 }

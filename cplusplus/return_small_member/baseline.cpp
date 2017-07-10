@@ -1,14 +1,14 @@
 // Baseline run where we don't actually calculate the sum, but
 // we still go through the loop.
 
-#include "random_numbers.hpp"
+#include "arbitrary_number.hpp"
 
 
-static int empty_loop(int n)
+static int empty_sum()
 {
     int sum = 0;
 
-    for (int i=0; i!=n; ++i) {
+    for (int i=0; i!=n_runs; ++i) {
         do_nothing();
     }
 
@@ -18,7 +18,6 @@ static int empty_loop(int n)
 
 int main()
 {
-    int n = 100000000;
-    create_random_number();
-    return empty_loop(n);
+    set_arbitrary_number(1);
+    return empty_sum();
 }
