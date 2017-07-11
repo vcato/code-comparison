@@ -12,7 +12,7 @@ static int random_number(std::mt19937 &random_engine)
 }
 
 
-void buildRandomNumbers(int n)
+void build_random_numbers(int n)
 {
     std::mt19937 random_engine(1);
     global_numbers.resize(n);
@@ -23,7 +23,7 @@ void buildRandomNumbers(int n)
 }
 
 
-const std::vector<int> &randomNumbers()
+const std::vector<int> &get_random_numbers()
 {
     return global_numbers;
 }

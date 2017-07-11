@@ -1,5 +1,5 @@
 #include <vector>
 
 
-extern void buildRandomNumbers(int n);
-extern std::vector<int> randomNumbers();
+extern void build_random_numbers(int n);
+extern std::vector<int> get_random_numbers();
