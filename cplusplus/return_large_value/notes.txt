@@ -1,5 +1,4 @@
 Timing with gcc 5.4.0 on Linux x86_64.
 
-minimum user time over three runs:
-  return by reference: 0m1.864s
-  return by value:     0m1.908s
+return by reference: 0m0.004s
+return by value:     0m1.716s

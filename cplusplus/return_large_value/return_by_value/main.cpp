@@ -1,5 +1,5 @@
-// Demonstrates returning a large object by reference,
-// which avoids a copy.
+// Demonstrates returning a large object by value which
+// requires a copy.
 
 #include "random_numbers.hpp"
 
@@ -12,7 +12,7 @@ int main()
     int sum = 0;
 
     for (int i=0; i!=n; ++i) {
-        sum += randomNumbersByReference()[i];
+        sum += randomNumbers()[i];
     }
 
     return sum;

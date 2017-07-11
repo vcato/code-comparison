@@ -23,13 +23,7 @@ void buildRandomNumbers(int n)
 }
 
 
-const std::vector<int> &randomNumbersByReference()
-{
-    return global_numbers;
-}
-
-
-std::vector<int> randomNumbersByValue()
+std::vector<int> randomNumbers()
 {
     return global_numbers;
 }
