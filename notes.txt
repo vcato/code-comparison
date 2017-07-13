@@ -22,6 +22,7 @@
 * Comparisons
   * C strings vs std::string
   * Functional vs object-oriented
+  * Sorting parallel arrays
 
 * Functionality
   * string split
