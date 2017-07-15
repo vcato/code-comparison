@@ -6,3 +6,8 @@ Ideas from Lee:
 4. overloaded functions vs template functions for same number of function parameters
 5. using iterator++ vs for(auto x: list)
 6. class/method vs struct/free functions
+7. Pure functions vs. non-pure.
+
+
+Others:
+* almost-always-auto vs traditional
