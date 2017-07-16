@@ -23,13 +23,13 @@ static int solve(const string &a,const string &b)
     //  L01111
     //  Y01112
 
-    int n = a.size();
-    int m = b.size();
+    size_t n = a.size();
+    size_t m = b.size();
 
     vector<vector<int>> table(n+1,vector<int>(m+1,0));
 
-    for (int i=0; i!=n; ++i) {
-        for (int j=0; j!=m; ++j) {
+    for (size_t i=0; i!=n; ++i) {
+        for (size_t j=0; j!=m; ++j) {
             if (a[i]==b[j]) {
                 table[i+1][j+1] = table[i][j] + 1;
             }
