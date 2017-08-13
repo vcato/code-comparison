@@ -23,6 +23,7 @@
   * C strings vs std::string
   * Functional vs object-oriented
   * Sorting parallel arrays
+  * Iterators using coroutines vs. manual
 
 * Functionality
   * string split
