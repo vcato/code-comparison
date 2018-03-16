@@ -19,17 +19,24 @@ struct Printable {
 
 
 namespace {
+struct Position {
+  float x = 0;
+  float y = 0;
+};
+}
+
+
+namespace {
 struct Circle {
-  float center_x = 0;
-  float center_y = 0;
+  Position center;
   float radius = 1;
 
   void printOn(ostream &stream) const
   {
     stream <<
       "Circle: "
-      "center_x=" << center_x << ", "
-      "center_y=" << center_y << ", "
+      "center_x=" << center.x << ", "
+      "center_y=" << center.y << ", "
       "radius=" << radius << "\n";
   }
 };
@@ -38,16 +45,15 @@ struct Circle {
 
 namespace {
 struct Square {
-  float center_x;
-  float center_y;
+  Position center;
   float size;
 
   void printOn(ostream &stream) const
   {
     stream <<
       "Square: "
-      "center_x=" << center_x << ", "
-      "center_y=" << center_y << ", "
+      "center_x=" << center.x << ", "
+      "center_y=" << center.y << ", "
       "size=" << size << "\n";
   }
 };
@@ -86,14 +92,12 @@ int main()
 {
   Circle circle;
 
-  circle.center_x = 1;
-  circle.center_y = 2;
+  circle.center = {1,2};
   circle.radius = 3;
 
   Square square;
 
-  square.center_x = 10;
-  square.center_y = 11;
+  square.center = {10,11};
   square.size = 12;
 
   PrintableRef<Circle> printable_circle(circle);

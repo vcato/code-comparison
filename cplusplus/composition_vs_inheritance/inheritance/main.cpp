@@ -16,9 +16,15 @@ struct Printable {
 
 
 namespace {
-struct Circle : Printable {
+struct Object {
   float center_x = 0;
   float center_y = 0;
+};
+}
+
+
+namespace {
+struct Circle : Printable, Object {
   float radius = 1;
 
   void printOn(ostream &stream) const override
@@ -34,9 +40,7 @@ struct Circle : Printable {
 
 
 namespace {
-struct Square : Printable {
-  float center_x;
-  float center_y;
+struct Square : Printable, Object {
   float size;
 
   void printOn(ostream &stream) const override
