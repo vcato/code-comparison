@@ -12,13 +12,6 @@ using std::make_unique;
 
 
 namespace {
-struct Printable {
-  virtual void printOn(ostream &) const = 0;
-};
-}
-
-
-namespace {
 struct Position {
   float x = 0;
   float y = 0;
@@ -56,6 +49,13 @@ struct Square {
       "center_y=" << center.y << ", "
       "size=" << size << "\n";
   }
+};
+}
+
+
+namespace {
+struct Printable {
+  virtual void printOn(ostream &) const = 0;
 };
 }
 
